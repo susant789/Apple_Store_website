@@ -48,8 +48,8 @@ html{
     transform: scale(1.5);
 }
 .Banner-section1{
-    flex-direction: column;
-}
+    flex-direction: column; 
+ }
 .sec1h{
     font-size: 13rem;
     font-weight: 400;
@@ -107,3 +107,119 @@ html{
     30% 0
   );
 }
+/* slideshow */
+.slideshow{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+
+}
+.slideshow div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 5s;
+}
+
+.slideshow div.change{
+    opacity: 1;
+}
+
+/* end-slideshow */
+
+/* iphone box */
+
+.iphone-wrapper{
+    perspective: 100rem;
+}
+.phone{
+    width: 30rem;
+    height: 55rem;
+    /* background-color: rgb(202, 43, 43); */
+    transform-style: preserve-3d;
+    transition: all .5s;
+}
+.iphone-front
+,.iphone-back{
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    padding: 2.5rem;   
+    position: absolute;
+    transform-style: preserve-3d;
+}
+.iphone-front{
+    transform: translateZ(5rem);
+}
+.iphone-front img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.iphone-front::before{
+    content:"";
+    width: 100%;
+    height: 10rem;
+    background-color: #fff;
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+.iphone-front::after{
+    content:"";
+    width: 100%;
+    height: 10rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+.iphone-back{
+    transform: translateZ(-5rem);
+}
+.iphone-back i{
+    transform: rotateY(180deg);
+    font-size: 15rem;
+    color: rgb(5, 20, 102);
+}
+.iphone-back::before{
+    content:"iphone";
+    width: 10rem;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    font-size: 2rem;
+    color: rgb(197, 163, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iphone-back::after{
+    content:"iphone";
+    width: 10rem;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(90deg);
+    transform-origin: right;
+    font-size: 2rem;
+    color: rgb(197, 163, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* end-iphone box */
