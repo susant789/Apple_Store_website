@@ -223,3 +223,54 @@ html{
 
 
 /* end-iphone box */
+/* controls */
+.controls{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: #000;
+    position: relative;
+    bottom: -7rem;
+    left:9rem;
+    color: rgb(131, 126, 126);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-shadow: inset .2rem .2rem .2rem rgb(54, 52, 52),
+    inset -.2rem -.2rem .2rem rgb(54, 52, 52);
+}
+.controls a{
+    position: absolute;
+    text-shadow: inset .1rem .1rem .1rem rgb(66, 63, 63),
+    inset -.1rem -.1rem .1rem rgb(66, 63, 63);
+}
+.controls a:nth-child(1){
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.controls a:nth-child(2){
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.controls a:nth-child(3){
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.controls a:nth-child(4){
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.controls a:nth-child(5){
+    top: 2rem;
+    left: 2rem;
+    transform: rotateZ(30deg);
+}
+.controls a:nth-child(6){
+    bottom: 2rem;
+    right: 2rem;
+    transform: rotateZ(30deg);
+}
+/* end-controls */

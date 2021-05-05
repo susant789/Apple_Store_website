@@ -31,12 +31,57 @@ const slideshows = () =>{
 slideshows();
 
 // phoneanimation
-let y = 0;
+var y = 0;
+var x = 0;
+var z = 0;
+let interval;
+let bool = true;
+var phone = document.querySelector(".phone");
+
+let xtop = document.querySelector(".x-top").
+addEventListener("click",()=>{
+    phone.style.transform = `rotateX(${x = x+20}deg) rotateY(${y}deg) rotateZ(${z}deg)`;
+});
+let xbottom = document.querySelector(".x-bottom").
+addEventListener("click",()=>{
+    phone.style.transform = `rotateX(${x = x-20}deg) rotateY(${y}deg) rotateZ(${z}deg)`;
+});
+let yleft = document.querySelector(".y-left").
+addEventListener("click",()=>{
+    phone.style.transform = `rotateX(${x}deg) rotateY(${y = y+20}deg) rotateZ(${z}deg)`;
+});
+let yright = document.querySelector(".y-right").
+addEventListener("click",()=>{
+    phone.style.transform = `rotateX(${x}deg) rotateY(${y-=20}deg) rotateZ(${z}deg)`;
+});
+let zleft = document.querySelector(".z-left").
+addEventListener("click",()=>{
+    phone.style.transform = `rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z+=20}deg)`;
+});
+let zright = document.querySelector(".z-right").
+addEventListener("click",()=>{
+    phone.style.transform = `rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z-=20}deg)`;
+});
 let rotate = ()=>{
-    setInterval(()=>{
-        let phone = document.querySelector(".phone");
-        phone.style.transform = `rotateY(${y++}deg)`;
-    },100)
+    if(bool){
+        interval = setInterval(()=>{
+            phone.style.transform = `rotateX(${x}deg) rotateY(${y++}deg) rotateZ(${z}deg)`;
+        },100)
+    }else{
+        clearInterval(interval)
+    }
+    
     
 }
 rotate();
+
+document.querySelector(".controls").
+addEventListener("mouseover",()=>{
+    bool=false;
+    rotate();
+});
+document.querySelector(".controls").
+addEventListener("mouseout",()=>{
+    bool=true;
+    rotate();
+});
