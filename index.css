@@ -484,3 +484,63 @@ html{
 
 
 /* end-section3 */
+/* section4 */
+.section4{
+    height: 110vh;
+    padding: 20vh 0;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+}
+.watch-cases{
+    flex-direction: column;
+}
+.watch-bands img,
+.watch-cases img{
+    width: 35rem;
+    height: 35rem;
+    object-fit: contain;
+}
+.watches{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.watches > div{
+    position: absolute;
+}
+.watch-control{
+    position: absolute;
+    background-color: rgb(216, 206, 206);
+    color: rgb(28, 240, 240);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 3rem;
+}
+.c-top{
+    top: 29rem;
+}
+.c-bottom{
+    bottom: 28rem;
+}
+.c-left{
+    left: 6rem;
+}
+.c-right{
+    right: 6rem;
+}
+.watch-button{
+    width: 15rem;
+    height: 5rem;
+    border: none;
+    border-radius: 5rem;
+    position: absolute;
+    background-color: #222;
+    bottom: 35rem;
+    right: 60rem;
+    color: rgb(189, 178, 178);
+}
+/* end-section4 */

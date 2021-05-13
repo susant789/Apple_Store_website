@@ -95,3 +95,25 @@ window.addEventListener("scroll",()=>{
             section3.classList.add("change1");
     }
 })
+
+// watches section
+// document.querySelectorAll(".watch-control").forEach(c=>{
+//     c.addEventListener("click",e=>{
+//         e.preventDefault;
+//     })
+// })
+
+const bands = document.querySelector(".watch-bands");
+const cases = document.querySelector(".watch-cases");
+
+const ctop = document.querySelector(".c-top");
+const cbottom = document.querySelector(".c-bottom");
+const cright = document.querySelector(".c-right");
+const cleft = document.querySelector(".c-left");
+
+const axisx = 0;
+const axisy = 0;
+ctop.addEventListener("click",()=>{
+    cases.style.marginTop = `${axisy-=70}rem`
+})
+
