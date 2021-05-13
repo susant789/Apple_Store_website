@@ -10,7 +10,6 @@ const slideshowd = ()=>{
 
 slideshowd();
 var divs = document.querySelectorAll(".slideshow div");
-console.log(divs)
 var a = 1;
 
 const slideshows = () =>{
@@ -85,3 +84,14 @@ addEventListener("mouseout",()=>{
     bool=true;
     rotate();
 });
+
+// mac
+const section3 = document.querySelector(".mac");
+// scrolling animation
+window.addEventListener("scroll",()=>{
+    if(window.pageYOffset + window.innerHeight >= section3.offsetTop
+         + section3.offsetHeight / 2){
+            // console.log("scrolled")
+            section3.classList.add("change1");
+    }
+})
