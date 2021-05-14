@@ -111,9 +111,46 @@ const cbottom = document.querySelector(".c-bottom");
 const cright = document.querySelector(".c-right");
 const cleft = document.querySelector(".c-left");
 
-const axisx = 0;
-const axisy = 0;
+let axisx = 0;
+let axisy = 0;
+const hidecon=()=>{
+    if(axisy === -280){
+        ctop.classList.add("hidden-control")
+    }else{
+        ctop.classList.remove("hidden-control")
+    }
+    if(axisy === 280){
+        cbottom.classList.add("hidden-control")
+    }else{
+        cbottom.classList.remove("hidden-control")
+    }
+    if(axisx === -280){
+        cright.classList.add("hidden-control")
+    }else{
+        cright.classList.remove("hidden-control")
+    }
+    if(axisx === 280){
+        cleft.classList.add("hidden-control")
+    }else{
+        cleft.classList.remove("hidden-control")
+    }
+} 
+
+
 ctop.addEventListener("click",()=>{
     cases.style.marginTop = `${axisy-=70}rem`
+    hidecon();
+})
+cbottom.addEventListener("click",()=>{
+    cases.style.marginTop = `${axisy+=70}rem`
+    hidecon();
+})
+cright.addEventListener("click",()=>{
+    bands.style.marginRight = `${axisx-=70}rem`
+    hidecon();
+})
+cleft.addEventListener("click",()=>{
+    bands.style.marginRight = `${axisx+=70}rem`
+    hidecon();
 })
 

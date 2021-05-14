@@ -495,6 +495,10 @@ html{
 }
 .watch-cases{
     flex-direction: column;
+    transition: all .5s;
+}
+.watch-bands{
+    transition: all .5s;
 }
 .watch-bands img,
 .watch-cases img{
@@ -542,5 +546,9 @@ html{
     bottom: 35rem;
     right: 60rem;
     color: rgb(189, 178, 178);
+}
+.hidden-control{
+    opacity: 0;
+    visibility: hidden;
 }
 /* end-section4 */
