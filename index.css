@@ -6,7 +6,8 @@
     text-decoration: none;
     list-style-type: none;
     outline: none;
-    font-family: 'Work Sans', sans-serif;;
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 html{
@@ -552,3 +553,33 @@ html{
     visibility: hidden;
 }
 /* end-section4 */
+/* section5 */
+.section5{
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 0 5rem;
+    justify-content: space-evenly !important;
+    overflow-x: hidden;
+}
+.section5h{
+    font-size: 10rem;
+    font-weight: 200;
+    color: #222;
+    margin-top: 10rem;
+}
+.img5 img:first-child{
+    background-color: #fff;
+    flex: 1;
+}
+.img5 img:last-child{
+    background-color:cyan;
+    height: 60rem;
+    width: 60rem;
+    object-fit: cover;
+    flex: 1;
+    overflow: hidden;
+}
+
+
+/* section5 */
