@@ -9,20 +9,22 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="/index.css">
+    <link rel="shotcut icon" href="/images/icons/home-icon.png">
     <title>Apple store</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="section1 center">
+        <div class="section1 center" id="section1">
             <a href="" class="logo">
                 <i class="fab fa-apple"></i>
             </a>
             <nav class="navbar">
-                <a href="">Home</a>
-                <a href="">Aboutus</a>
-                <a href="">Service</a>
-                <a href="">Contact</a>
+                <a href="#section1">Home</a>
+                <a href="#section2">iphones</a>
+                <a href="#section3">macbook</a>
+                <a href="#section4">watches</a>
+                <a href="#section5">airpods</a>
             </nav>
             <div class="iphone-wrapper">
                 <div class="phone">
@@ -57,7 +59,7 @@
             <div class="slideshow">
             </div>
         </div>
-        <div class="section-2 center">
+        <div class="section-2 center" id="section2">
             <div class="section2h">iphones</div>
             <div class="iphoneimg center">
                 <img src="/images/iPhone 12/iphones-1-img.png" class="img-1">
@@ -68,7 +70,7 @@
                 <div class="btn center"><span>Buy</span></div>
             </div>
         </div>
-        <div class="section-3 center">
+        <div class="section-3 center" id="section3">
             <div class="section3h">
                 Macbook Pro
             </div>
@@ -89,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="section4 center">
+        <div class="section4 center" id="section4">
             <div class="watches center">
                 <div class="watch-bands center">
                     <a class="watch-b">
@@ -164,13 +166,28 @@
                 </div>
                 <button class="watch-button">Buy Now</button>
         </div>
-        <div class="section5 center">
-            <div class="section5h">ipodes</div>
-             <div class="img5 center">
-                 <img class="center" src="/images/AirPods/airpods-1.png">
-                 <img class="center" src="/images/AirPods/airpods-2.png">
-             </div>
+        <div class="section5 center" id="section5">
+            <div class="airpods">
+                <div class="s5h">Airpods</div>
+                <img src="/images/AirPods/airpods-1.png"class="s5i1">
+                <img src="/images/AirPods/airpods-2.png"class="s5i2">
+                <div class="s5buttons">
+                    <button class="s5b1">Read More</buttom>
+                    <button class="s5b2">Buy</buttom>
+                </div>
+            </div>
         </div>
+        <div class="footer center">
+            <div class="ficons">
+                <a href="#section1"><img src="/images/icons/home-icon.png"></a>
+                <a href="#section2"><img src="/images/icons/iphone -icon.png"></a>
+                <a href="#section3"><img src="/images/icons/macbook-icon.png"></a>
+                <a href="#section4"><img src="/images/icons/watch-icon.png"></a>
+                <a href="#section5"><img src="/images/icons/airpods-icon.png"></a>
+            </div>
+            <p class="copy">All rights reserved since 2008-1018</p>
+        </div>
+
     </div>
 
     <script src="/index.js"></script>
